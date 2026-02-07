@@ -183,15 +183,6 @@ NutriFit/
 
 ---
 
-## 👥 Team Contribution
-
-| Member                | Role                                                 |
-| --------------------- | ---------------------------------------------------- |
-| **Hrushikesh Chothe** | Backend, Database Design, JWT Auth, Azure Deployment |
-| Team Members          | Frontend, UI/UX, Admin Panel, Fitness Logic          |
-
----
-
 ## 🔮 Future Enhancements
 
 * Push notifications for reminders
