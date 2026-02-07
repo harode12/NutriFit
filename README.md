@@ -31,7 +31,7 @@ Many users struggle to maintain consistency in fitness tracking. NutriFit solves
 | **Database**       | MS SQL Server                                       |
 | **Deployment**     | Azure App Service, Azure SQL, Azure Static Web Apps |
 | **Authentication** | JWT + OTP-based password reset                      |
-| **Charts**         | Chart.js / Plotly.js                                |
+| **Charts**         | Recharts                                            |
 
 ---
 
