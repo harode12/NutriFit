@@ -1,0 +1,686 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\workoutplandetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\workoutplandetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\workoutplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\workoutplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\userworkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\userworkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\userhealthcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\userhealthcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\userdietfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\userdietfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\progresslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\progresslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\meallog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\meallog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\healthcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\healthcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\dietplanfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\dietplanfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\dietplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\dietplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\dtos\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\dtos\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\dtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\dtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\dtos\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\dtos\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\dtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\dtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\userhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\userhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\progresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\progresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\healthconditionadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\healthconditionadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\goalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\goalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\dietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\dietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\hrushikesh chothe\\desktop\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\epniw2u5..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/NutriFitDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\hwlw2i4u..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\fspm4bzl..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkoutPlanDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\WorkoutPlanDetail.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\WorkoutPlanDetail.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\WorkoutPlanDetail.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\WorkoutPlanDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:46:13.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkoutPlan.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\WorkoutPlan.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\WorkoutPlan.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\WorkoutPlan.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\WorkoutPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:46:01.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Program.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Program.cs",
+              "RelativeToolTip": "NutriFit.Api\\Program.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwI4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T12:44:39.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "NutriFit.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\appsettings.json",
+              "RelativeToolTip": "NutriFit.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-31T11:09:41.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Workout.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\Workout.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Workout.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\Workout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:45:49.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserWorkout.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserWorkout.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\UserWorkout.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserWorkout.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\UserWorkout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:45:43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserProfile.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\UserProfile.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:45:30.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserHealthCondition.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserHealthCondition.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\UserHealthCondition.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserHealthCondition.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\UserHealthCondition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:45:18.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDietFood.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserDietFood.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\UserDietFood.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\UserDietFood.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\UserDietFood.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:45:11.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProgressLog.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\ProgressLog.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\ProgressLog.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\ProgressLog.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\ProgressLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:44:42.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MealLog.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\MealLog.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\MealLog.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\MealLog.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\MealLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:44:30.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Goal.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Goal.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\Goal.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Goal.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\Goal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:44:06.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DietPlanFood.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\DietPlanFood.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\DietPlanFood.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\DietPlanFood.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\DietPlanFood.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:43:41.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\User.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\User.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T14:54:26.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DietPlan.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\DietPlan.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\DietPlan.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\DietPlan.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\DietPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:43:28.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VerifyOtpDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\VerifyOtpDto.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\DTOs\\VerifyOtpDto.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\VerifyOtpDto.cs",
+              "RelativeToolTip": "NutriFit.Api\\DTOs\\VerifyOtpDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:42:26.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HealthCondition.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\HealthCondition.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\HealthCondition.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\HealthCondition.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\HealthCondition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T17:27:37.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ResetPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\ResetPasswordDto.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\DTOs\\ResetPasswordDto.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\ResetPasswordDto.cs",
+              "RelativeToolTip": "NutriFit.Api\\DTOs\\ResetPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:42:08.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Food.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Food.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\Food.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Food.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\Food.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T11:14:59.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\ProfileDto.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\DTOs\\ProfileDto.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\ProfileDto.cs",
+              "RelativeToolTip": "NutriFit.Api\\DTOs\\ProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:41:40.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "NutriFit.Api\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:41:30.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Models\\Admin.cs",
+              "RelativeToolTip": "NutriFit.Api\\Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:05:21.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ForgotPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\ForgotPasswordDto.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\DTOs\\ForgotPasswordDto.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\ForgotPasswordDto.cs",
+              "RelativeToolTip": "NutriFit.Api\\DTOs\\ForgotPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:41:20.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "NutriFit.Api\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T15:32:12.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "WorkoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\WorkoutController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\WorkoutController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\WorkoutController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\WorkoutController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:40:11.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:40:09.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "NutriFit.Api\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwFUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T11:55:46.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserHealthController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\UserHealthController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\UserHealthController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\UserHealthController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\UserHealthController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwDUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:40:00.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProgressController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\ProgressController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\ProgressController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\ProgressController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\ProgressController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAiwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:39:48.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HealthConditionAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\HealthConditionAdminController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\HealthConditionAdminController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\HealthConditionAdminController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\HealthConditionAdminController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:38:32.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DebugController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\DebugController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\DebugController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\DebugController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\DebugController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:37:49.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DietController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\DietController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\DietController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\DietController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\DietController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAiwNQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T11:33:18.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAiwJoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T11:34:46.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAiwBMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T15:34:03.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GoalsController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\GoalsController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\GoalsController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\GoalsController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\GoalsController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAiwLYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T11:34:38.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "NutriFit.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\Desktop\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "NutriFit.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAKABAAAAAAAAAAAmwLABAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:26:25.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "epniw2u5..sql",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\epniw2u5..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\epniw2u5..sql",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\epniw2u5..sql",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\epniw2u5..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-29T15:23:50.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/NutriFitDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/NutriFitDB/True/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-29T15:12:28.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "hwlw2i4u..sql",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\hwlw2i4u..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\hwlw2i4u..sql",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\hwlw2i4u..sql",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\hwlw2i4u..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-29T14:43:34.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "fspm4bzl..sql",
+              "DocumentMoniker": "C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\fspm4bzl..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\fspm4bzl..sql",
+              "ToolTip": "C:\\Users\\Hrushikesh Chothe\\AppData\\Local\\Temp\\fspm4bzl..sql",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\fspm4bzl..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-29T14:42:50.709Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

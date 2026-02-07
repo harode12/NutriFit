@@ -1,0 +1,6 @@
+{
+    "name": "DebugUser",
+    "email": "debug8@test.com",
+    "password": "Password123!",
+    "confirmPassword": "Password123!"
+}
