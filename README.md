@@ -1,211 +1,215 @@
-🥗 NutriFit – Health & Fitness Management Web Application
+# 🥗 NutriFit – Health & Fitness Management Web Application
 
+🔗 **GitHub Repository:** [https://github.com/harode12/NutriFit](https://github.com/harode12/NutriFit)
 
+---
 
+## 🚀 Project Overview
 
+**NutriFit** is a full‑stack health and fitness management web application that helps users track and improve their lifestyle in one centralized platform. It allows users to monitor BMI, manage diet and workout routines, set goals, and visualize progress through interactive dashboards.
 
+Many users struggle to maintain consistency in fitness tracking. NutriFit solves this by combining **BMI tracking, personalized plans, and goal monitoring** into an simple and intuitive web application.
 
+### 🌟 Key Functionalities
 
+* **User Profile Management** – Age, gender, height, weight, goals, and food preferences
+* **BMI & Progress Tracking** – Automatic BMI calculation with visual graphs
+* **Personalized Diet & Workout Plans** – Generated based on goals and health data
+* **Goal Management** – Set deadlines and track completion
+* **Admin Dashboard** – Monitor users and manage the system
 
-GitHub Repository: https://github.com/harode12/NutriFit
+> 👨‍💻 Developed by a team of 5. My role (Hrushikesh Chothe): Backend development, database design, JWT authentication, OTP password reset, and Azure deployment.
 
-🔹 Project Overview
+---
 
-NutriFit is a full-stack web application designed to help users manage their health and fitness in one place. Users often struggle to track BMI, diet, workouts, health conditions, and fitness goals, so NutriFit combines all of these features into a single, intuitive platform.
+## 🧱 Tech Stack
 
-Key functionalities:
+| Layer              | Technology                                          |
+| ------------------ | --------------------------------------------------- |
+| **Frontend**       | React.js                                            |
+| **Backend**        | ASP.NET Core Web API                                |
+| **Database**       | MS SQL Server                                       |
+| **Deployment**     | Azure App Service, Azure SQL, Azure Static Web Apps |
+| **Authentication** | JWT + OTP-based password reset                      |
+| **Charts**         | Chart.js / Plotly.js                                |
 
-User Profile Management: Users enter age, gender, height, weight, fitness goals, and food preferences (vegan, vegetarian, non-vegetarian).
+---
 
-BMI & Progress Tracking: System calculates BMI dynamically, tracks weight graphs, and daily progress.
+## ✨ Features
 
-Personalized Plans: Generates diet and workout plans based on user goals and health conditions.
+* ✅ Secure User Registration & Login (JWT Authentication)
+* ✅ Profile Management (health & fitness data)
+* ✅ Dynamic BMI Calculation & Health Tracking
+* ✅ Personalized Diet & Workout Recommendations
+* ✅ Goal Tracking with Deadlines
+* ✅ Admin Panel for User Monitoring
+* ✅ Graphical Reports (daily/weekly/monthly progress)
+* ✅ Cloud Deployment on Microsoft Azure
 
-Goal Setting: Users can set target goals with deadlines and monitor in progress vs completed goals.
+---
 
-Admin Dashboard: Admins monitor all registered users, see latest data and recommendations, and can delete users if required.
+## ⚙️ Installation & Setup
 
-Team of 5: I was responsible for backend development, database design, JWT authentication with OTP-based password reset, and Azure deployment.
+### 1️⃣ Clone Repository
 
-🔹 Tech Stack
-Layer	Technology
-Frontend	React.js
-Backend	ASP.NET Core Web API
-Database	MS SQL Server
-Deployment	Azure SQL, Azure App Service, Azure Static Web Apps
-Authentication	JWT, OTP-based password reset
-Charts	Plotly.js / Chart.js (optional for BMI/weight graphs)
-🔹 Features
-
-✅ User Registration & Login with secure JWT Authentication
-
-✅ Profile Management: Age, Gender, Height, Weight, Fitness Goals, Food Preferences
-
-✅ Dynamic BMI Calculation & Health Tracking
-
-✅ Personalized Diet & Workout Plans
-
-✅ Goal Tracking with Deadlines
-
-✅ Admin Panel to monitor users and recommendations
-
-✅ Graphs & Reports: Daily/weekly/monthly progress visualization
-
-✅ Azure Deployment for frontend, backend, and database
-
-🔹 Installation & Setup
-1️⃣ Clone Repository
+```bash
 git clone https://github.com/harode12/NutriFit.git
 cd NutriFit
+```
 
-2️⃣ Backend Setup (ASP.NET Core Web API)
+---
 
-Open the backend folder in Visual Studio 2022 or VS Code.
+### 2️⃣ Backend Setup (ASP.NET Core Web API)
 
-Configure the appsettings.json:
+1. Open the backend folder in **Visual Studio 2022** or **VS Code**
 
-Database connection string for Azure SQL (or local SQL Server).
+2. Configure `appsettings.json`:
 
-JWT Key, Issuer, Audience for authentication.
+   * Azure SQL / Local SQL connection string
+   * JWT Key, Issuer, Audience
+   * SMTP credentials for OTP email
 
-SMTP settings for OTP email functionality.
+3. Install dependencies:
 
-Important: Connection strings, JWT keys, and passwords are securely stored in appsettings.json.
-
-Install required packages:
-
+```bash
 dotnet restore
+```
 
+4. Run database migrations:
 
-Run migrations to set up the database:
-
+```bash
 dotnet ef database update
+```
 
+5. Start backend server:
 
-Run the backend locally:
-
+```bash
 dotnet run
+```
 
+📍 Backend runs at: `https://localhost:5001`
 
-Backend will run at: https://localhost:5001
+> CORS is configured to allow frontend communication.
 
-✅ Note: Backend includes CORS configuration to allow frontend communication from local host or deployed app URLs.
+---
 
-3️⃣ Frontend Setup (React.js)
+### 3️⃣ Frontend Setup (React.js)
 
-Navigate to frontend folder:
-
+```bash
 cd NutriFit-Frontend
-
-
-Install dependencies:
-
 npm install
-
-
-Run locally:
-
 npm start
+```
 
+📍 Frontend runs at: `http://localhost:3000`
 
-Frontend will run at: http://localhost:3000
+The frontend dynamically connects to backend APIs to display dashboards and analytics.
 
-⚡ The frontend is connected to backend API and dynamically renders user profile, BMI, goals, and graphs.
+---
 
-4️⃣ Database (MS SQL Server)
+### 4️⃣ Database (MS SQL Server)
 
-Can use local SQL Server or Azure SQL Database.
+* Supports **local SQL Server** or **Azure SQL Database**
+* Update connection string in `appsettings.json`
+* Database tables include:
 
-Connection string must be updated in appsettings.json for backend to connect.
+  * Users & Profiles
+  * Health Conditions
+  * Diet & Workout Plans
+  * Goals
+  * Admin
 
-Database includes tables for:
+EF Core migrations automatically generate schema.
 
-Users & Profiles
+---
 
-Health Conditions
+## ☁️ Azure Deployment
 
-Workouts & Diet Plans
+### Backend Deployment
 
-Goal Tracking
-
-Admin
-
-🔑 Data migrations are handled using EF Core, so schema can be generated automatically.
-
-5️⃣ Azure Deployment
-
-Backend (ASP.NET Core Web API):
-
-Build and publish:
-
+```bash
 dotnet publish -c Release -o ./publish
+```
 
+* Deploy publish folder to **Azure App Service**
+* Configure environment variables in Azure
 
-Zip the publish folder and deploy to Azure App Service.
+### Frontend Deployment
 
-Configure App Settings in Azure to match appsettings.json.
+* Deploy using **Azure Static Web Apps**
+* Set API URL to deployed backend
 
-Frontend (React.js):
+### Database Deployment
 
-Deploy using Azure Static Web Apps.
+* Create **Azure SQL Database**
+* Update backend connection string
 
-Set API URL in environment variables to point to deployed backend.
+---
 
-Database (Azure SQL):
+## 🔐 Authentication & Security
 
-Deploy database on Azure SQL server.
+* JWT-based secure API authentication
+* OTP password reset via SMTP email
+* Restricted CORS policies
+* Secure configuration management
 
-Update backend connection string with server name, database, username, and password.
+---
 
-🔹 JWT Authentication & Security
+## 📸 Screenshots / Preview
 
-JWT Tokens are used for secure API access.
+> *(Add screenshots here)*
 
-OTP-based password reset is integrated via SMTP (Gmail).
+* User Dashboard
+* Admin Dashboard
+* BMI & Progress Graphs
 
-CORS policies allow only frontend URLs to access the API.
+---
 
-🔹 Screenshots / Preview
-User Dashboard
+## 📂 Folder Structure
 
-Admin Dashboard
-
-BMI & Weight Graph
-
-🔹 Folder Structure
+```
 NutriFit/
-├─ backend/           # ASP.NET Core Web API
-│  ├─ Controllers/
-│  ├─ Models/
-│  ├─ Data/
-│  ├─ Services/
-│  └─ Program.cs
-├─ frontend/          # React.js App
-│  ├─ src/
-│  ├─ public/
-│  └─ package.json
-└─ README.md
+├── backend/        # ASP.NET Core Web API
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Data/
+│   └── Program.cs
+├── frontend/       # React Application
+│   ├── src/
+│   ├── public/
+│   └── package.json
+└── README.md
+```
 
-🔹 Team Contribution
-Member	Role
-Me (Hrushikesh Chothe)	Backend, Database Design, JWT Auth, Azure Deployment
-Others	Frontend, UI/UX, Workouts & Diet Logic, Admin Panel
-🔹 Future Enhancements
+---
 
-Add Push Notifications for goal reminders
+## 👥 Team Contribution
 
-Integrate Fitness Device Tracking (e.g., smartwatches)
+| Member                | Role                                                 |
+| --------------------- | ---------------------------------------------------- |
+| **Hrushikesh Chothe** | Backend, Database Design, JWT Auth, Azure Deployment |
+| Team Members          | Frontend, UI/UX, Admin Panel, Fitness Logic          |
 
-Add Advanced Analytics for diet and workout trends
+---
 
-Implement AI-based recommendations for personalized fitness plans
+## 🔮 Future Enhancements
 
-🔹 References
+* Push notifications for reminders
+* Fitness device integration (smartwatches)
+* Advanced analytics dashboard
+* AI-based personalized recommendations
 
-React Documentation
+---
 
-ASP.NET Core Web API Docs
+## 📚 References
 
-Azure SQL Database
+* React Documentation
+* ASP.NET Core Web API Docs
+* Azure SQL Documentation
+* JWT Authentication Guides
 
-JWT Authentication
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a **star ⭐** on GitHub!
