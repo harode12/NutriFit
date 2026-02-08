@@ -18,8 +18,6 @@ Many users struggle to maintain consistency in fitness tracking. NutriFit solves
 * **Goal Management** – Set deadlines and track completion
 * **Admin Dashboard** – Monitor users and manage the system
 
-> 👨‍💻 Developed by a team of 5. My role (Hrushikesh Chothe): Backend development, database design, JWT authentication, OTP password reset, and Azure deployment.
-
 ---
 
 ## 🧱 Tech Stack
