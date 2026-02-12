@@ -1,17 +1,16 @@
-public class RegisterDto
+﻿public class RegisterDto
 {
-    public required string Name { get; set; } = string.Empty;
-    public required string Email { get; set; } = string.Empty;
-    public required string Password { get; set; } = string.Empty;
-    public required string ConfirmPassword { get; set; } = string.Empty; // ✅ Added
+    public string? Name { get; set; }
+    public string? Email { get; set; }
+    public string? Password { get; set; }
+    public string? ConfirmPassword { get; set; } // ✅ Added
 }
 
 public class AdminRegisterDto
 {
-    public required string Name { get; set; } = string.Empty;
-    public required string Email { get; set; } = string.Empty;
-    public required string Password { get; set; } = string.Empty;
-    public required string ConfirmPassword { get; set; } = string.Empty; // ✅ Added
-    public required string SecretKey { get; set; } = string.Empty;
+    public string? Name { get; set; }
+    public string? Email { get; set; }
+    public string? Password { get; set; }
+    public string? ConfirmPassword { get; set; } // ✅ Added
+    public string? SecretKey { get; set; }
 }
-
