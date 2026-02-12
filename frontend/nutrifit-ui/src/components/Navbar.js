@@ -1,39 +1,39 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Navbar() {
+  const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
-  const token = localStorage.getItem("token");
-  const role = localStorage.getItem("role");
+  const user = JSON.parse(localStorage.getItem("user"));
 
-  const logout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("role");
-    navigate("/login");
+  const handleLogout = () => {
+    logout();
+    navigate("/");
   };
 
   return (
-    <nav className="navbar navbar-dark bg-dark navbar-expand-lg px-3">
-      <Link className="navbar-brand" to="/">NutriFit</Link>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+      <span className="navbar-brand">NutriFit</span>
 
-      <div className="ms-auto">
-        {!token ? (
-          <>
-            <Link className="btn btn-outline-light me-2" to="/login">Login</Link>
-            <Link className="btn btn-warning" to="/register">Register</Link>
-          </>
-        ) : (
-          <>
-            {role === "admin" && (
-              <Link className="btn btn-warning me-2" to="/admin">Admin Panel</Link>
-            )}
+      <div className="navbar-nav me-auto">
+        <Link className="nav-link" to="/dashboard">Dashboard</Link>
+        <Link className="nav-link" to="/bmi">BMI</Link>
+        <Link className="nav-link" to="/sleep">Sleep</Link>
+        <Link className="nav-link" to="/workout">Workout</Link>
+        <Link className="nav-link" to="/food">Food</Link>
+        <Link className="nav-link" to="/my-plan">My Plan</Link>
 
-            {role === "user" && (
-              <Link className="btn btn-outline-info me-2" to="/profile">Profile</Link>
-            )}
-
-            <button className="btn btn-danger" onClick={logout}>Logout</button>
-          </>
+        {user?.role === "ADMIN" && (
+          <Link className="nav-link" to="/admin/add-plan">Add Plan</Link>
         )}
+      </div>
+
+      <div className="d-flex align-items-center text-white">
+        <span className="me-3">👤 {user?.username}</span>
+        <button className="btn btn-outline-light btn-sm" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </nav>
   );
