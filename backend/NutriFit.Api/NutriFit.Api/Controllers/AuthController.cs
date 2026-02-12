@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -6,140 +6,103 @@ using System.Text;
 using System.Security.Cryptography;
 using System.Net;
 using System.Net.Mail;
-using Microsoft.AspNetCore.Cors;
-
 
 [ApiController]
 [Route("api/auth")]
-[EnableCors("AllowFrontend")]
 public class AuthController : ControllerBase
 {
     private readonly AppDbContext _db;
     private readonly IConfiguration _config;
-    private readonly ILogger<AuthController> _logger;
 
-    public AuthController(AppDbContext db, IConfiguration config, ILogger<AuthController> logger)
+    public AuthController(AppDbContext db, IConfiguration config)
     {
         _db = db;
         _config = config;
-        _logger = logger;
     }
 
     // =========================
-    // ? USER REGISTER (PUBLIC)
+    // ✅ USER REGISTER (PUBLIC)
     // =========================
     [HttpPost("register-user")]
     public IActionResult RegisterUser(RegisterDto dto)
     {
-        try
+        if (dto.Password != dto.ConfirmPassword)
+            return BadRequest("Password and Confirm Password do not match.");
+
+        if (_db.Users.Any(x => x.Email == dto.Email))
+            return BadRequest("User already exists");
+
+        var user = new User
         {
-            if (dto.Password != dto.ConfirmPassword)
-                return BadRequest("Password and Confirm Password do not match.");
+            Name = dto.Name,
+            Email = dto.Email,
+            Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)
+        };
 
-            // Normalize email
-            string email = dto.Email!.Trim().ToLower();
+        _db.Users.Add(user);
+        _db.SaveChanges();
 
-            if (_db.Users.Any(u => u.Email == email))
-                return BadRequest("User already exists");
-
-            var user = new User
-            {
-                Name = dto.Name,
-                Email = email,
-                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)
-            };
-
-            _db.Users.Add(user);
-            _db.SaveChanges();
-
-            return Ok("User registered successfully");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error registering user: {Email}", dto.Email);
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
-        }
+        return Ok("User registered successfully");
     }
 
     // ==================================
-    // ? ADMIN REGISTER (SECRET KEY ONLY)
+    // ✅ ADMIN REGISTER (SECRET KEY ONLY)
     // ==================================
     [HttpPost("register-admin")]
     public IActionResult RegisterAdmin(AdminRegisterDto dto)
     {
-        try
+        if (dto.Password != dto.ConfirmPassword)
+            return BadRequest("Password and Confirm Password do not match.");
+
+        var secretFromConfig = _config["AdminSettings:SecretKey"];
+
+        if (dto.SecretKey != secretFromConfig)
+            return Unauthorized("Invalid admin secret key");
+
+        if (_db.Admins.Any(x => x.Email == dto.Email))
+            return BadRequest("Admin already exists");
+
+        var admin = new Admin
         {
-            if (dto.Password != dto.ConfirmPassword)
-                return BadRequest("Password and Confirm Password do not match.");
+            Name = dto.Name,
+            Email = dto.Email,
+            Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)
+        };
 
-            var secretFromConfig = _config["AdminSettings:SecretKey"];
+        _db.Admins.Add(admin);
+        _db.SaveChanges();
 
-            if (dto.SecretKey != secretFromConfig)
-                return Unauthorized("Invalid admin secret key");
-
-            // Normalize email
-            string email = dto.Email!.Trim().ToLower();
-
-            if (_db.Admins.Any(a => a.Email == email))
-                return BadRequest("Admin already exists");
-
-            var admin = new Admin
-            {
-                Name = dto.Name,
-                Email = email,
-                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)
-            };
-
-            _db.Admins.Add(admin);
-            _db.SaveChanges();
-
-            return Ok("Admin registered successfully");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error registering admin: {Email}", dto.Email);
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
-        }
+        return Ok("Admin registered successfully");
     }
 
     // =========================
-    // ? COMMON LOGIN (ADMIN + USER)
+    // ✅ COMMON LOGIN (ADMIN + USER)
     // =========================
     [HttpPost("login")]
     public IActionResult Login(LoginDto dto)
     {
-        try
+        // 🔍 Check admin first
+        var admin = _db.Admins.FirstOrDefault(x => x.Email == dto.Email);
+        if (admin != null && BCrypt.Net.BCrypt.Verify(dto.Password, admin.Password))
         {
-            string email = dto.Email!.Trim().ToLower();
-
-            // ?? Check admin first
-            var admin = _db.Admins.FirstOrDefault(x => x.Email == email);
-            if (admin != null && BCrypt.Net.BCrypt.Verify(dto.Password, admin.Password))
-            {
-                var adminToken = GenerateToken(admin.AdminId, "admin");
-                return Ok(new { token = adminToken, role = "admin" });
-            }
-
-            // ?? Check user
-            var user = _db.Users.FirstOrDefault(x => x.Email == email);
-            if (user == null)
-                return NotFound("User not found");
-
-            if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.Password))
-                return Unauthorized("Invalid password");
-
-            var userToken = GenerateToken(user.UserId, "user");
-            return Ok(new { token = userToken, role = "user" });
+            var adminToken = GenerateToken(admin.AdminId, "admin");
+            return Ok(new { token = adminToken, role = "admin" });
         }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error during login for email: {Email}", dto.Email);
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
-        }
+
+        // 🔍 Check user
+        var user = _db.Users.FirstOrDefault(x => x.Email == dto.Email);
+        if (user == null)
+            return NotFound("User not found");
+
+        if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.Password))
+            return Unauthorized("Invalid password");
+
+        var userToken = GenerateToken(user.UserId, "user");
+        return Ok(new { token = userToken, role = "user" });
     }
 
     // =========================
-    // ?? JWT TOKEN CREATOR
+    // 🔐 JWT TOKEN CREATOR
     // =========================
     private string GenerateToken(int id, string role)
     {
@@ -166,191 +129,33 @@ public class AuthController : ControllerBase
     }
 
     // =========================
-    // ? SEND OTP (NEW FLOW)
-    // =========================
-    [HttpPost("send-otp")]
-    public IActionResult SendOtp(ForgotPasswordDto dto)
-    {
-        try
-        {
-            if (string.IsNullOrEmpty(dto.Email))
-                return BadRequest("Email is required.");
-
-            string email = dto.Email!.Trim().ToLower();
-
-            // 1. Check User
-            var user = _db.Users.FirstOrDefault(x => x.Email == email);
-            Admin? admin = null;
-
-            if (user == null)
-            {
-                // 2. Check Admin
-                admin = _db.Admins.FirstOrDefault(x => x.Email == email);
-                if (admin == null)
-                    return NotFound("User not found");
-            }
-
-            // Generate 6-digit OTP
-            var random = new Random();
-            var otp = random.Next(100000, 999999).ToString();
-
-            // Save OTP
-            if (user != null)
-            {
-                user.OtpCode = otp;
-                user.OtpExpiry = DateTime.Now.AddMinutes(1);
-                user.OtpVerified = false;
-            }
-            else if (admin != null)
-            {
-                admin.OtpCode = otp;
-                admin.OtpExpiry = DateTime.Now.AddMinutes(1);
-                admin.OtpVerified = false;
-            }
-            
-            _db.SaveChanges();
-
-            // Send OTP via email
-            string targetEmail = user?.Email ?? admin!.Email!;
-            string targetName = user?.Name ?? admin!.Name!;
-
-            var smtpHost = _config["SMTP:Host"];
-            var smtpPort = int.Parse(_config["SMTP:Port"] ?? "587");
-            var smtpUser = _config["SMTP:Username"];
-            var smtpPass = _config["SMTP:Password"];
-
-            using (var client = new SmtpClient(smtpHost, smtpPort))
-            {
-                client.EnableSsl = true;
-                client.Credentials = new NetworkCredential(smtpUser!, smtpPass!);
-
-                using (var mail = new MailMessage())
-                {
-                    mail.From = new MailAddress(smtpUser!, "NutriFit");
-                    mail.To.Add(targetEmail);
-
-                    mail.Subject = "Your Password Reset OTP";
-                    mail.IsBodyHtml = true;
-                    mail.Body = $@"
-                        <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;'>
-                            <h2 style='color: #0d6efd; text-align: center;'>NutriFit Password Reset</h2>
-                            <p style='font-size: 16px; color: #333;'>Hi <strong>{targetName}</strong>,</p>
-                            <p style='font-size: 16px; color: #333;'>You requested to reset your password. Use the OTP below to proceed:</p>
-                            
-                            <div style='text-align: center; margin: 20px 0;'>
-                                <span style='font-size: 24px; font-weight: bold; color: #333; letter-spacing: 5px; background: #f8f9fa; padding: 10px 20px; border-radius: 5px; border: 1px solid #ddd;'>{otp}</span>
-                            </div>
-
-                            <p style='font-size: 14px; color: #666; text-align: center;'>This OTP is valid for <strong>1 minute</strong>.</p>
-                            <p style='font-size: 14px; color: #999; text-align: center; margin-top: 20px;'>If you did not request this, please ignore this email.</p>
-                            
-                            <hr style='border: none; border-top: 1px solid #eee; margin: 20px 0;'>
-                            <p style='font-size: 12px; color: #aaa; text-align: center;'>&copy; {DateTime.Now.Year} NutriFit. All rights reserved.</p>
-                        </div>";
-                    
-                    client.Send(mail);
-                }
-            }
-
-            return Ok("OTP sent to your email successfully.");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error sending OTP to email: {Email}", dto.Email);
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
-        }
-    }
-
-    // =========================
-    // ? VERIFY OTP (NEW FLOW)
-    // =========================
-    [HttpPost("verify-otp")]
-    public IActionResult VerifyOtp(VerifyOtpDto dto)
-    {
-        try
-        {
-            if (string.IsNullOrEmpty(dto.Email) || string.IsNullOrEmpty(dto.Otp))
-                return BadRequest("Email and OTP are required.");
-
-            dto.Email = dto.Email!.Trim().ToLower();
-
-            var user = _db.Users.FirstOrDefault(x => x.Email == dto.Email);
-            Admin? admin = null;
-
-            if (user == null)
-            {
-                admin = _db.Admins.FirstOrDefault(x => x.Email == dto.Email);
-                if (admin == null)
-                    return NotFound("User not found");
-            }
-
-            bool isUser = user != null;
-            string? code = isUser ? user!.OtpCode : admin!.OtpCode;
-            DateTime? expiry = isUser ? user!.OtpExpiry : admin!.OtpExpiry;
-
-            // Check if OTP matches and is not expired
-            if (code != dto.Otp)
-                return BadRequest("Invalid OTP");
-
-            if (expiry == null || expiry < DateTime.Now)
-                return BadRequest("OTP has expired");
-
-            // Generate a verification token for reset password
-            var tokenBytes = RandomNumberGenerator.GetBytes(32);
-            var verificationToken = Convert.ToBase64String(tokenBytes);
-
-            if (isUser)
-            {
-                user!.OtpVerified = true;
-                user.ResetToken = verificationToken;
-                user.ResetTokenExpiry = DateTime.Now.AddMinutes(15);
-            }
-            else
-            {
-                admin!.OtpVerified = true;
-                admin.ResetToken = verificationToken;
-                admin.ResetTokenExpiry = DateTime.Now.AddMinutes(15);
-            }
-            
-            _db.SaveChanges();
-
-            return Ok(new { verificationToken });
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error verifying OTP for email: {Email}", dto.Email);
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
-        }
-    }
-
-    // =========================
-    // ? FORGOT PASSWORD (SMTP EMAIL)
+    // ✅ FORGOT PASSWORD (SMTP EMAIL)
     // =========================
     [HttpPost("forgot-password")]
     public IActionResult ForgotPassword(ForgotPasswordDto dto)
     {
+        if (string.IsNullOrEmpty(dto.Email))
+            return BadRequest("Email is required.");
+
+        var user = _db.Users.FirstOrDefault(x => x.Email == dto.Email);
+        if (user == null)
+            return NotFound("User not found");
+
+        // Generate secure token
+        var tokenBytes = RandomNumberGenerator.GetBytes(32);
+        var token = Convert.ToBase64String(tokenBytes);
+
+        // Save token and expiry in DB
+        user.ResetToken = token;
+        user.ResetTokenExpiry = DateTime.Now.AddHours(1);
+        _db.SaveChanges();
+
+        // Send email
+        if (string.IsNullOrEmpty(user.Email))
+            return BadRequest("User email is not set.");
+
         try
         {
-            if (string.IsNullOrEmpty(dto.Email))
-                return BadRequest("Email is required.");
-
-            var user = _db.Users.FirstOrDefault(x => x.Email == dto.Email);
-            if (user == null)
-                return NotFound("User not found");
-
-            // Generate secure token
-            var tokenBytes = RandomNumberGenerator.GetBytes(32);
-            var token = Convert.ToBase64String(tokenBytes);
-
-            // Save token and expiry in DB
-            user.ResetToken = token;
-            user.ResetTokenExpiry = DateTime.Now.AddHours(1);
-            _db.SaveChanges();
-
-            // Send email
-            if (string.IsNullOrEmpty(user.Email))
-                return BadRequest("User email is not set.");
-
             var smtpHost = _config["SMTP:Host"];
             var smtpPort = int.Parse(_config["SMTP:Port"] ?? "587");
             var smtpUser = _config["SMTP:Username"];
@@ -380,73 +185,42 @@ public class AuthController : ControllerBase
 
             return Ok("Reset password link sent to your email.");
         }
-        catch (Exception ex)
+        catch
         {
-            _logger.LogError(ex, "Error processing forgot password for email: {Email}", dto.Email);
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
+            return StatusCode(500, "Failed to send email.");
         }
     }
 
     // =========================
-    // ? RESET PASSWORD (SECURE)
+    // ✅ RESET PASSWORD (SECURE)
     // =========================
     [HttpPost("reset-password")]
     public IActionResult ResetPassword(ResetPasswordDto dto)
     {
-        try
-        {
-            if (dto.NewPassword != dto.ConfirmPassword)
-                return BadRequest("New Password and Confirm Password do not match.");
+        if (dto.NewPassword != dto.ConfirmPassword)
+            return BadRequest("New Password and Confirm Password do not match.");
 
-            if (string.IsNullOrEmpty(dto.Token))
-                return BadRequest("Invalid or missing reset token.");
+        if (string.IsNullOrEmpty(dto.Token))
+            return BadRequest("Invalid or missing reset token.");
 
-            // Decode token to handle URL encoding
-            var token = Uri.UnescapeDataString(dto.Token);
+        // Decode token to handle URL encoding
+        var token = Uri.UnescapeDataString(dto.Token);
 
-            var user = _db.Users.FirstOrDefault(u =>
-                u.ResetToken == token && u.ResetTokenExpiry > DateTime.Now);
+        var user = _db.Users.FirstOrDefault(u =>
+            u.ResetToken == token && u.ResetTokenExpiry > DateTime.Now);
 
-            Admin? admin = null;
-            if (user == null)
-            {
-                admin = _db.Admins.FirstOrDefault(u =>
-                    u.ResetToken == token && u.ResetTokenExpiry > DateTime.Now);
-                
-                if (admin == null)
-                     return BadRequest("Invalid or expired token.");
-            }
+        if (user == null)
+            return BadRequest("Invalid or expired token.");
 
-            // Update password
-            // Update password
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
+        // Update password
+        user.Password = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
 
-            if (user != null)
-                user.Password = hashedPassword;
-            else
-                admin!.Password = hashedPassword;
+        // ✅ Security: clear token and expiry after reset
+        user.ResetToken = null;
+        user.ResetTokenExpiry = null;
 
-            // ? Security: clear token and expiry after reset
-            if (user != null)
-            {
-                user.ResetToken = null;
-                user.ResetTokenExpiry = null;
-            }
-            else
-            {
-                admin!.ResetToken = null;
-                admin!.ResetTokenExpiry = null;
-            }
+        _db.SaveChanges();
 
-            _db.SaveChanges();
-
-            return Ok("Password reset successfully.");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error processing reset password");
-            return StatusCode(500, "Internal Server Error: " + ex.Message);
-        }
+        return Ok("Password reset successfully.");
     }
 }
-
