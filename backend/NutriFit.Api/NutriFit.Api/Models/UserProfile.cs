@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class UserProfile
@@ -29,4 +28,3 @@ public class UserProfile
 
     public User? User { get; set; }
 }
-
