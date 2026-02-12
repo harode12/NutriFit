@@ -28,7 +28,7 @@ Many users struggle to maintain consistency in fitness tracking. NutriFit solves
 | **Backend**        | ASP.NET Core Web API                                |
 | **Database**       | MS SQL Server                                       |
 | **Deployment**     | Azure App Service, Azure SQL, Azure Static Web Apps |
-| **Authentication** | JWT + OTP-based password reset                      |
+| **Authentication** | JWT                                                 |
 | **Charts**         | Recharts                                            |
 
 ---
@@ -41,7 +41,7 @@ Many users struggle to maintain consistency in fitness tracking. NutriFit solves
 * ✅ Personalized Diet & Workout Recommendations
 * ✅ Goal Tracking with Deadlines
 * ✅ Admin Panel for User Monitoring
-* ✅ Graphical Reports (daily/weekly/monthly progress)
+* ✅ Graphical Reports (monthly progress)
 * ✅ Cloud Deployment on Microsoft Azure
 
 ---
