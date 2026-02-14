@@ -1,0 +1,43 @@
+NUTRIFIT DATABASE DEPLOYMENT USING AZURE
+
+Step 1: Create Azure Account
+- Go to https://portal.azure.com
+- Sign in or create a new Azure account
+
+Step 2: Create Azure SQL Database
+- In Azure Portal → Click "Create a resource"
+- Select "SQL Database"
+- Click Create
+
+Step 3: Configure Database
+- Resource group: Create new (Nutrifit-RG)
+- Database name: NutrifitDB
+- Server: Create new server
+  - Server name: nutritifit-sql-server
+  - Admin username: your_username
+  - Password: strong password
+  - Region: closest to your users
+
+Step 4: Configure Networking
+- Allow Azure services to access server
+- Add your local IP address
+
+Step 5: Review and Create
+- Click Review + Create
+- Click Create
+
+Step 6: Connect Database
+- Open database → Connection strings
+- Copy ADO.NET or JDBC connection string
+- Save for backend use
+
+Step 7: Create Tables
+- Open Query Editor in Azure
+- Run SQL scripts to create Nutrifit tables
+
+Step 8: Backup & Security
+- Enable automatic backup
+- Configure firewall rules
+- Enable encryption
+
+Database deployment completed.
