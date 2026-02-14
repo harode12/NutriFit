@@ -1,43 +1,58 @@
-NUTRIFIT DATABASE DEPLOYMENT USING AZURE
+NUTRIFIT PROJECT — DATABASE DEPLOYMENT (Azure SQL)
 
-Step 1: Create Azure Account
-- Go to https://portal.azure.com
-- Sign in or create a new Azure account
+STEP 1: Create Azure Account
 
-Step 2: Create Azure SQL Database
-- In Azure Portal → Click "Create a resource"
-- Select "SQL Database"
-- Click Create
+* Go to https://portal.azure.com
+* Sign in or create a free Azure account
 
-Step 3: Configure Database
-- Resource group: Create new (Nutrifit-RG)
-- Database name: NutrifitDB
-- Server: Create new server
-  - Server name: nutritifit-sql-server
-  - Admin username: your_username
-  - Password: strong password
-  - Region: closest to your users
+STEP 2: Create Azure SQL Database
 
-Step 4: Configure Networking
-- Allow Azure services to access server
-- Add your local IP address
+1. Search for "SQL Database" in Azure portal
+2. Click "Create"
+3. Select subscription and resource group
+4. Enter database name (e.g., NutrifitDB)
+5. Click "Create new server"
+6. Enter:
 
-Step 5: Review and Create
-- Click Review + Create
-- Click Create
+   * Server name (unique)
+   * Admin username
+   * Password
+   * Region (nearest location)
+7. Choose Basic pricing tier
+8. Click "Review + Create"
+9. Click "Create"
 
-Step 6: Connect Database
-- Open database → Connection strings
-- Copy ADO.NET or JDBC connection string
-- Save for backend use
+STEP 3: Configure Firewall
 
-Step 7: Create Tables
-- Open Query Editor in Azure
-- Run SQL scripts to create Nutrifit tables
+1. Open the created SQL server
+2. Go to Networking / Firewall settings
+3. Add your IP address
+4. Enable "Allow Azure services"
+5. Save changes
 
-Step 8: Backup & Security
-- Enable automatic backup
-- Configure firewall rules
-- Enable encryption
+STEP 4: Connect Using SQL Server Management Studio (SSMS)
 
-Database deployment completed.
+* Server name: yourserver.database.windows.net
+* Authentication: SQL Server Authentication
+* Use admin username and password
+
+STEP 5: Import Local Database
+Option A: Generate SQL Script
+
+* Right click local database
+* Tasks → Generate Scripts
+* Select schema + data
+* Run script in Azure SQL database
+
+Option B: Use Import Data-tier Application (.bacpac)
+
+* Export database as .bacpac
+* Import into Azure SQL
+
+STEP 6: Verify Tables and Data
+
+* Check all tables
+* Test queries
+* Confirm data integrity
+
+Database deployment completed successfully.
