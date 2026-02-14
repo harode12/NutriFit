@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Nutri\\NutriFit\\backend\\NutriFit.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|c:\\users\\admin\\desktop\\nutri\\nutrifit\\backend\\nutrifit.api\\nutrifit.api\\nutrifit.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6C6AB3FC-58DB-BE10-C251-4F03963DAC9D}|NutriFit.Api\\NutriFit.Api.csproj|solutionrelative:nutrifit.api\\nutrifit.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NutriFit.Api",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Nutri\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\NutriFit.Api.csproj",
+              "RelativeDocumentMoniker": "NutriFit.Api\\NutriFit.Api.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Nutri\\NutriFit\\backend\\NutriFit.Api\\NutriFit.Api\\NutriFit.Api.csproj",
+              "RelativeToolTip": "NutriFit.Api\\NutriFit.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-13T07:36:02.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
