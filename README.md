@@ -155,16 +155,6 @@ dotnet publish -c Release -o ./publish
 
 ## 📸 Screenshots / Preview
 
-
-> *(Add screenshots here)*
-
-* User Dashboard
-* Admin Dashboard
-* BMI & Progress Graphs
-
----
-
-## 📂 Folder Structure
 <img width="1882" height="860" alt="nutrifit-7" src="https://github.com/user-attachments/assets/a901ab91-f7ac-4312-9e58-a2cf8c5f9273" />
 <img width="1890" height="898" alt="nutrifit-6" src="https://github.com/user-attachments/assets/911d2f2b-c165-4d01-b473-456988d54461" />
 <img width="1886" height="894" alt="nutrifit-5" src="https://github.com/user-attachments/assets/9ce3b51b-9f0c-432b-a656-ab9ab911a14d" />
@@ -181,6 +171,14 @@ dotnet publish -c Release -o ./publish
 <img width="1903" height="900" alt="nutrifit-10" src="https://github.com/user-attachments/assets/7446e4e3-8fb4-420e-9816-ce94eb078218" />
 <img width="1908" height="892" alt="nutrifit-9" src="https://github.com/user-attachments/assets/34631115-9f5e-490b-8eb1-a5810a86b901" />
 <img width="1888" height="899" alt="nutrifit-8" src="https://github.com/user-attachments/assets/8963551a-e0b7-4eba-9181-681f790accfc" />
+
+* User Dashboard
+* Admin Dashboard
+* BMI & Progress Graphs
+
+---
+
+## 📂 Folder Structure
 
 ```
 NutriFit/
