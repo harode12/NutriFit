@@ -147,7 +147,6 @@ dotnet publish -c Release -o ./publish
 ## 🔐 Authentication & Security
 
 * JWT-based secure API authentication
-* OTP password reset via SMTP email
 * Restricted CORS policies
 * Secure configuration management
 
@@ -155,10 +154,8 @@ dotnet publish -c Release -o ./publish
 
 ## 📸 Screenshots / Preview
 
-* User Dashboard
+* User Dashboard (BMI & Progress Graphs)
 * Admin Dashboard
-* BMI & Progress Graphs
-
 ---
 
 ## 📂 Folder Structure
@@ -182,9 +179,7 @@ NutriFit/
 ## 🔮 Future Enhancements
 
 * Push notifications for reminders
-* Fitness device integration (smartwatches)
 * Advanced analytics dashboard
-* AI-based personalized recommendations
 
 ---
 
