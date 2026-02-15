@@ -1,0 +1,34 @@
+NUTRIFIT FRONTEND DEPLOYMENT USING AZURE
+
+Step 1: Build Frontend Project
+- Run build command:
+  npm run build
+- Ensure production files are generated
+
+Step 2: Create Static Web App
+- Azure Portal → Create Resource
+- Select "Static Web App"
+
+Step 3: Connect GitHub Repository
+- Select Nutrifit frontend repo
+- Choose branch
+- Set build settings:
+  - App location: /
+  - Output location: dist or build
+
+Step 4: Configure Environment
+- Add backend API URL
+- Save configuration
+
+Step 5: Deploy Frontend
+- Azure automatically builds and deploys
+- Wait for deployment success
+
+Step 6: Test Website
+- Open generated Azure URL
+- Verify frontend connects to backend
+
+Step 7: Enable Custom Domain (Optional)
+- Add domain in Static Web App settings
+
+Frontend deployment completed.
