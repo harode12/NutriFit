@@ -1,34 +1,39 @@
-NUTRIFIT FRONTEND DEPLOYMENT USING AZURE
+NUTRIFIT PROJECT — FRONTEND DEPLOYMENT (React on Azure)
 
-Step 1: Build Frontend Project
-- Run build command:
+STEP 1: Build React Project
+
+* Open project in VS Code
+* Run command:
+  npm install
   npm run build
-- Ensure production files are generated
 
-Step 2: Create Static Web App
-- Azure Portal → Create Resource
-- Select "Static Web App"
+STEP 2: Create Azure Static Web App
 
-Step 3: Connect GitHub Repository
-- Select Nutrifit frontend repo
-- Choose branch
-- Set build settings:
-  - App location: /
-  - Output location: dist or build
+1. Go to Azure portal
+2. Search "Static Web Apps"
+3. Click "Create"
+4. Connect GitHub repository
+5. Select branch
+6. Build preset: React
+7. App location: /
+8. Output location: build
+9. Click Create
 
-Step 4: Configure Environment
-- Add backend API URL
-- Save configuration
+STEP 3: Manual Deployment (Alternative)
 
-Step 5: Deploy Frontend
-- Azure automatically builds and deploys
-- Wait for deployment success
+* Create Azure App Service
+* Upload build folder via FTP or ZIP deploy
 
-Step 6: Test Website
-- Open generated Azure URL
-- Verify frontend connects to backend
+STEP 4: Configure API Endpoint
 
-Step 7: Enable Custom Domain (Optional)
-- Add domain in Static Web App settings
+* Update React environment variables
+* Add backend API URL
+* Rebuild project
 
-Frontend deployment completed.
+STEP 5: Test Frontend
+
+* Open deployed URL
+* Verify UI loads
+* Check API integration
+
+Frontend deployment completed successfully.
