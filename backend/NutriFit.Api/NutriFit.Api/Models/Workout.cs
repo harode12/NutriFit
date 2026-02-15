@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class Workout
 {
@@ -12,4 +11,3 @@ public class Workout
     public float CaloriesBurnedPerMin { get; set; }
     public string? HealthSafe { get; set; }
 }
-

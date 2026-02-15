@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class DietPlan
 {
@@ -20,4 +19,3 @@ public class DietPlan
     public string WeightCategory { get; set; } = null!;
     // Underweight, Normal, Overweight
 }
-

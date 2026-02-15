@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class DietPlanFood
 {
@@ -13,4 +12,3 @@ public class DietPlanFood
     public string MealType { get; set; } = null!;
     // breakfast, snack, lunch, dinner
 }
-

@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class HealthCondition
 {
@@ -11,4 +10,3 @@ public class HealthCondition
 
     public ICollection<UserHealthCondition>? UserHealthConditions { get; set; }
 }
-

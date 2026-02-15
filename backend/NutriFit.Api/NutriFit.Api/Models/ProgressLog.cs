@@ -1,20 +1,29 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class ProgressLog
+namespace NutriFit.Models
 {
-    [Key]
-    public int ProgressId { get; set; }
+    public class ProgressLog
+    {
+        [Key]
+        public int ProgressId { get; set; }
 
-    public int UserId { get; set; }
+        [Required]
+        public int UserId { get; set; }
 
-    public double Weight { get; set; }
-    public double Bmi { get; set; }
+        [Column(TypeName = "float")]
+        public double Weight { get; set; }
 
-    [Required]
-    public string WeightCategory { get; set; } = string.Empty;
+        [Column(TypeName = "float")]
+        public double Bmi { get; set; }
 
-    public DateTime Date { get; set; } = DateTime.Now;
+        [Required]
+        public string WeightCategory { get; set; } = "normal";
+        // low, normal, high
 
-    // Navigation property
-    public User? User { get; set; }
+        public DateTime Date { get; set; } = DateTime.UtcNow.Date;
+
+        // ✅ FIX: nullable navigation
+        public User? User { get; set; }
+    }
 }

@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class Food
@@ -33,4 +32,3 @@ public class Food
     [Column(TypeName = "decimal(6,2)")]
     public decimal SodiumContent { get; set; }
 }
-

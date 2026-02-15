@@ -1,18 +1,22 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class UserDietFood
+namespace NutriFit.Models
 {
-    [Key]
-    public int UserDietFoodId { get; set; }
+    public class UserDietFood
+    {
+        [Key]
+        public int UserDietFoodId { get; set; }
 
-    public int UserId { get; set; }
+        public int UserId { get; set; }
 
-    public int FoodId { get; set; }
+        public int FoodId { get; set; }
 
-    [Required]
-    public string MealType { get; set; } = string.Empty;
+        [Required]
+        public string MealType { get; set; } = string.Empty; // breakfast, snack, lunch, etc
 
-    // Navigation properties
-    public User? User { get; set; }
-    public Food? Food { get; set; }
+        // Nullable navigation
+        public User? User { get; set; }
+        public Food? Food { get; set; }
+    }
 }

@@ -1,22 +1,25 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-public class UserWorkout
+namespace NutriFit.Models
 {
-    [Key]
-    public int UserWorkoutId { get; set; }
+    public class UserWorkout
+    {
+        [Key]
+        public int UserWorkoutId { get; set; }
 
-    public int UserId { get; set; }
+        public int UserId { get; set; }
 
-    public int WorkoutId { get; set; }
+        public int WorkoutId { get; set; }
 
-    [Required]
-    public string DayName { get; set; } = string.Empty;
+        [Required]
+        public string DayName { get; set; } = string.Empty; // Monday, Tuesday, etc
 
-    [Column(TypeName = "int")]
-    public int? DurationMinutes { get; set; }
+        [Column(TypeName = "int")]
+        public int? DurationMinutes { get; set; }
 
-    // Navigation properties
-    public User? User { get; set; }
-    public Workout? Workout { get; set; }
+        // Nullable navigation
+        public User? User { get; set; }
+        public Workout? Workout { get; set; }
+    }
 }

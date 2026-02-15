@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class UserHealthCondition
@@ -16,4 +15,3 @@ public class UserHealthCondition
     [ForeignKey("HealthConditionId")]
     public HealthCondition? HealthCondition { get; set; }
 }
-

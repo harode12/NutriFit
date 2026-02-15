@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class WorkoutPlanDetail
 {
@@ -14,4 +13,3 @@ public class WorkoutPlanDetail
     public WorkoutPlan? WorkoutPlan { get; set; }
     public Workout? Workout { get; set; }
 }
-

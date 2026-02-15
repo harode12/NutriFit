@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class MealLog
@@ -18,4 +17,3 @@ public class MealLog
 
     public DateTime Date { get; set; }
 }
-

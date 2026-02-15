@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class WorkoutPlan
 {
@@ -14,4 +13,3 @@ public class WorkoutPlan
 
     public ICollection<WorkoutPlanDetail>? WorkoutPlanDetails { get; set; }
 }
-

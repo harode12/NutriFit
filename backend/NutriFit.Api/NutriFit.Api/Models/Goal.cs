@@ -1,25 +1,27 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class Goal
+namespace NutriFit.Models
 {
-    [Key]
-    public int GoalId { get; set; }
+    public class Goal
+    {
+        [Key]
+        public int GoalId { get; set; }
 
-    public int UserId { get; set; }
+        public int UserId { get; set; }
 
-    [Required]
-    public string GoalType { get; set; } = string.Empty; // weight_loss, muscle_gain, fitness
+        [Required]
+        public string GoalType { get; set; } = string.Empty;
+        // muscle_gain, fitness, flexibility
 
-    public double TargetValue { get; set; }
+        public double TargetValue { get; set; }
 
-    public DateTime StartDate { get; set; } = DateTime.Now;
+        public DateTime StartDate { get; set; } = DateTime.UtcNow.Date;
+        public DateTime EndDate { get; set; }
 
-    public DateTime EndDate { get; set; } = DateTime.Now; // Not nullable in DB
+        public string Status { get; set; } = "in_progress";
+        // in_progress, completed
 
-    [Required]
-    public string Status { get; set; } = "in_progress"; // in_progress, completed
-
-    // Navigation property
-    public User? User { get; set; }
+        // ✅ FIX: nullable navigation
+        public User? User { get; set; }
+    }
 }
