@@ -1,46 +1,43 @@
-NUTRIFIT BACKEND DEPLOYMENT USING AZURE
+NUTRIFIT PROJECT — BACKEND DEPLOYMENT (ASP.NET Web API on Azure)
 
-Step 1: Prepare Backend Code
-- Ensure backend runs locally
-- Update database connection string
-- Use environment variables for secrets
+STEP 1: Prepare Backend Project
 
-Step 2: Install Azure CLI
-- Download Azure CLI
-- Run: az login
+* Open ASP.NET Web API in Visual Studio
+* Update connection string to Azure SQL database
+* Test project locally
 
-Step 3: Create App Service
-- Azure Portal → Create Resource
-- Select "App Service"
+STEP 2: Create Azure App Service
 
-Step 4: Configure App Service
-- Name: nutritifit-backend
-- Runtime: Node.js / Java / Python (choose your backend)
-- OS: Linux
-- Region: same as database
+1. Go to Azure portal
+2. Search "App Service"
+3. Click "Create"
+4. Select:
 
-Step 5: Deploy Backend
-Option A: Using GitHub
-- Connect GitHub repository
-- Select backend branch
-- Enable continuous deployment
+   * Publish: Code
+   * Runtime stack: .NET
+   * Operating system: Windows
+5. Choose resource group
+6. Create new App Service plan
+7. Click "Create"
 
-Option B: Using Azure CLI
-- az webapp up --name nutritifit-backend
+STEP 3: Publish from Visual Studio
 
-Step 6: Configure Environment Variables
-- App Service → Settings → Configuration
-- Add:
-  - DB_CONNECTION_STRING
-  - API_KEYS
-  - SECRET_KEYS
+1. Right click project → Publish
+2. Select Azure → App Service
+3. Choose created App Service
+4. Click Publish
 
-Step 7: Enable CORS
-- App Service → CORS settings
-- Allow frontend domain
+STEP 4: Configure App Settings
 
-Step 8: Test Backend API
-- Open backend URL
-- Test API endpoints
+* Open Azure App Service
+* Go to Configuration
+* Add connection string for Azure SQL
+* Save and restart app
 
-Backend deployment completed.
+STEP 5: Test API
+
+* Copy deployed URL
+* Test endpoints using browser or Postman
+* Ensure database connection works
+
+Backend deployment completed successfully.
