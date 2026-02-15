@@ -1,43 +1,46 @@
-NUTRIFIT DATABASE DEPLOYMENT USING AZURE
+NUTRIFIT BACKEND DEPLOYMENT USING AZURE
 
-Step 1: Create Azure Account
-- Go to https://portal.azure.com
-- Sign in or create a new Azure account
+Step 1: Prepare Backend Code
+- Ensure backend runs locally
+- Update database connection string
+- Use environment variables for secrets
 
-Step 2: Create Azure SQL Database
-- In Azure Portal → Click "Create a resource"
-- Select "SQL Database"
-- Click Create
+Step 2: Install Azure CLI
+- Download Azure CLI
+- Run: az login
 
-Step 3: Configure Database
-- Resource group: Create new (Nutrifit-RG)
-- Database name: NutrifitDB
-- Server: Create new server
-  - Server name: nutritifit-sql-server
-  - Admin username: your_username
-  - Password: strong password
-  - Region: closest to your users
+Step 3: Create App Service
+- Azure Portal → Create Resource
+- Select "App Service"
 
-Step 4: Configure Networking
-- Allow Azure services to access server
-- Add your local IP address
+Step 4: Configure App Service
+- Name: nutritifit-backend
+- Runtime: Node.js / Java / Python (choose your backend)
+- OS: Linux
+- Region: same as database
 
-Step 5: Review and Create
-- Click Review + Create
-- Click Create
+Step 5: Deploy Backend
+Option A: Using GitHub
+- Connect GitHub repository
+- Select backend branch
+- Enable continuous deployment
 
-Step 6: Connect Database
-- Open database → Connection strings
-- Copy ADO.NET or JDBC connection string
-- Save for backend use
+Option B: Using Azure CLI
+- az webapp up --name nutritifit-backend
 
-Step 7: Create Tables
-- Open Query Editor in Azure
-- Run SQL scripts to create Nutrifit tables
+Step 6: Configure Environment Variables
+- App Service → Settings → Configuration
+- Add:
+  - DB_CONNECTION_STRING
+  - API_KEYS
+  - SECRET_KEYS
 
-Step 8: Backup & Security
-- Enable automatic backup
-- Configure firewall rules
-- Enable encryption
+Step 7: Enable CORS
+- App Service → CORS settings
+- Allow frontend domain
 
-Database deployment completed.
+Step 8: Test Backend API
+- Open backend URL
+- Test API endpoints
+
+Backend deployment completed.
