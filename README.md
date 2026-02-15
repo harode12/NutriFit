@@ -155,22 +155,38 @@ dotnet publish -c Release -o ./publish
 
 ## 📸 Screenshots / Preview
 
-<img width="1882" height="860" alt="nutrifit-7" src="https://github.com/user-attachments/assets/a901ab91-f7ac-4312-9e58-a2cf8c5f9273" />
-<img width="1890" height="898" alt="nutrifit-6" src="https://github.com/user-attachments/assets/911d2f2b-c165-4d01-b473-456988d54461" />
-<img width="1886" height="894" alt="nutrifit-5" src="https://github.com/user-attachments/assets/9ce3b51b-9f0c-432b-a656-ab9ab911a14d" />
-<img width="1885" height="901" alt="nutrifit-4" src="https://github.com/user-attachments/assets/59ed0870-fcbe-4f27-8890-033fcaab6d81" />
-<img width="1880" height="906" alt="nutrifit-3" src="https://github.com/user-attachments/assets/6a58caac-c745-4982-bb2c-989f49530d9b" />
-<img width="1892" height="906" alt="nutrifit-2" src="https://github.com/user-attachments/assets/f529efdf-9eaf-4311-ad37-4676377045f8" />
-<img width="1919" height="907" alt="nutrifit-1" src="https://github.com/user-attachments/assets/1fdadf68-968d-4fa4-abe4-24081a09a789" />
-<img width="1920" height="1287" alt="nutrifit-16" src="https://github.com/user-attachments/assets/34a015d3-eb3f-400e-af5e-3cf955fe49ad" />
-<img width="1920" height="1213" alt="nutrifit-15" src="https://github.com/user-attachments/assets/a9bdb546-311c-4838-9782-4006e730a511" />
-<img width="1920" height="1067" alt="nutrifit-14" src="https://github.com/user-attachments/assets/b4fd1086-df81-43c3-946c-2d834451f931" />
-<img width="1920" height="1535" alt="nutrifit-13" src="https://github.com/user-attachments/assets/d432477c-c7d7-48b5-8b92-effcf79d7822" />
-<img width="1920" height="1743" alt="nutrifit-12" src="https://github.com/user-attachments/assets/10774218-e9c0-470d-bfd9-456dbe17f517" />
-<img width="1909" height="889" alt="nutrifit-11" src="https://github.com/user-attachments/assets/b014b9ff-c7ab-4f93-9f09-b7450021b228" />
-<img width="1903" height="900" alt="nutrifit-10" src="https://github.com/user-attachments/assets/7446e4e3-8fb4-420e-9816-ce94eb078218" />
-<img width="1908" height="892" alt="nutrifit-9" src="https://github.com/user-attachments/assets/34631115-9f5e-490b-8eb1-a5810a86b901" />
-<img width="1888" height="899" alt="nutrifit-8" src="https://github.com/user-attachments/assets/8963551a-e0b7-4eba-9181-681f790accfc" />
+<img width="1919" height="907" alt="nutrifit-1" src="https://github.com/user-attachments/assets/86f886fe-ba8c-462b-955c-4f5d1180a019" />
+
+<img width="1892" height="906" alt="nutrifit-2" src="https://github.com/user-attachments/assets/c7719bcd-f4bb-4efc-bdf3-264a7d2b73ed" />
+
+<img width="1880" height="906" alt="nutrifit-3" src="https://github.com/user-attachments/assets/d3008bcc-b392-475d-af0f-8e13016d87c2" />
+
+<img width="1885" height="901" alt="nutrifit-4" src="https://github.com/user-attachments/assets/81535976-7273-4083-bdaa-814b09ec4625" />
+
+<img width="1886" height="894" alt="nutrifit-5" src="https://github.com/user-attachments/assets/77828ef9-908a-4214-8975-db7662963313" />
+
+<img width="1890" height="898" alt="nutrifit-6" src="https://github.com/user-attachments/assets/284dff4f-eec8-4f35-bd42-f9f60eb7195e" />
+
+<img width="1882" height="860" alt="nutrifit-7" src="https://github.com/user-attachments/assets/bb5024ad-3ea5-4479-b114-bb7f1d42104e" />
+
+<img width="1888" height="899" alt="nutrifit-8" src="https://github.com/user-attachments/assets/588c52b9-02df-4a6e-bce4-6ca9759f5474" />
+
+<img width="1908" height="892" alt="nutrifit-9" src="https://github.com/user-attachments/assets/c71c792d-8c0f-499a-9212-e890f389ac34" />
+
+<img width="1903" height="900" alt="nutrifit-10" src="https://github.com/user-attachments/assets/1ef43643-0de3-44b1-9a57-d69f59637ba3" />
+
+<img width="1909" height="889" alt="nutrifit-11" src="https://github.com/user-attachments/assets/cd17befa-e9e0-40ec-978c-9cbf153e64f2" />
+
+<img width="1920" height="1743" alt="nutrifit-12" src="https://github.com/user-attachments/assets/569cedf9-8d5d-43e4-b132-e9beafa77c08" />
+
+<img width="1920" height="1535" alt="nutrifit-13" src="https://github.com/user-attachments/assets/847bf974-1a51-44a6-8067-e1ccc06f49d8" />
+
+<img width="1920" height="1067" alt="nutrifit-14" src="https://github.com/user-attachments/assets/158c4e06-92db-43c8-b7ba-d6f7c92e7e06" />
+
+<img width="1920" height="1213" alt="nutrifit-15" src="https://github.com/user-attachments/assets/3f0b0ed5-1840-4c8f-8438-8eddb8d866e3" />
+
+<img width="1920" height="1287" alt="nutrifit-16" src="https://github.com/user-attachments/assets/2760486f-3044-4f23-bfe1-088312987719" />
+
 
 * User Dashboard
 * Admin Dashboard
