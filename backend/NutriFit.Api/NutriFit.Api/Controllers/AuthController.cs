@@ -224,3 +224,4 @@ public class AuthController : ControllerBase
         return Ok("Password reset successfully.");
     }
 }
+
