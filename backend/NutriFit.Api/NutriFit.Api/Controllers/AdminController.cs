@@ -279,3 +279,4 @@ public class AdminController : ControllerBase
         return Ok(new { message = "User and all related data deleted successfully" });
     }
 }
+
